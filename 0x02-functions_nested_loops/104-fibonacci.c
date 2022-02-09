@@ -18,7 +18,7 @@ int main(void)
 		a = b;
 		b = c;
 		printf("%lu", c);
-	if (f == 98)
+	if (f == 97)
 	{
 		putchar ('\n');
 	}
