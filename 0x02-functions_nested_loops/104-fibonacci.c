@@ -19,7 +19,7 @@ int main(void)
 		a = b;
 		b = c;
 		printf("%.0Lf", c);
-	if (f == 98)
+	if (f == 99)
 	{
 		putchar ('\n');
 	}
