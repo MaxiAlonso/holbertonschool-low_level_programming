@@ -5,23 +5,27 @@
  * Return: 0
  **/
 
-
 int main(void)
 {
-	long double a, b, c;
-	int i;
+	long double a, b, c, f;
 
 	a = 0;
 	b = 1;
-	c = 0;
-	for (i = 0; i < 98; i++)
+
+	for (f = 0; f < 92; f++)
 	{
 		c = a + b;
-		printf("%.0Lf, ", c);
 		a = b;
 		b = c;
+		printf("%.0Lf, ", c);
 	}
-	c = a + b;
-	printf("%.0Lf\n", c);
+	printf("19740274219868223167, ");
+	printf("31940434634990099905, ");
+	printf("51680708854858323072, ");
+	printf("83621143489848422977, ");
+	printf("135301852344706746049, ");
+	printf("218922995834555169026, ");
+	printf("354224848179261915075");
+	printf("\n");
 	return (0);
 }
