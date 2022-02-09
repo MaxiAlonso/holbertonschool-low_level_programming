@@ -2,7 +2,7 @@
 
 /**
  * main - entry poiny
- * Return:0
+ * Return: 0
  **/
 
 int main(void)
@@ -27,7 +27,7 @@ int main(void)
 		}
 		else
 		{
-		printf("%d ", a);
+		printf("%d", a);
 		}
 		if (a < 100)
 		{
