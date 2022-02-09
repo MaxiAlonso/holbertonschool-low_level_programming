@@ -5,28 +5,23 @@
  * Return: 0
  **/
 
+
 int main(void)
 {
 	long double a, b, c;
-	unsigned long int f;
+	int i;
 
 	a = 0;
 	b = 1;
-
-	for (f = 0; f <= 98; f++)
+	c = 0;
+	for (i = 0; i < 98; i++)
 	{
 		c = a + b;
+		printf("%.0Lf, ", c);
 		a = b;
 		b = c;
-		printf("%.0Lf", c);
-	if (f == 98)
-	{
-		putchar ('\n');
 	}
-	else
-	{
-			printf(", ");
-	}
-	}
+	c = a + b;
+	printf("%.0Lf\n", c);
 	return (0);
 }
