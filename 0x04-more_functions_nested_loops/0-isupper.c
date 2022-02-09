@@ -2,7 +2,7 @@
 
 /**
  * int _isupper - checks for uppercase character.
- * Return: 1 if c is upper = otherwise
+ * Return: 1 if c is upper = 0 otherwise
  * @c: character
  **/
 
