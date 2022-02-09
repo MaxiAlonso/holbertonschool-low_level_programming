@@ -7,8 +7,9 @@
 
 int main(void)
 {
-	unsigned long int a, b, c, f;
-
+	long double a, b, c;
+	int f;
+	
 	a = 0;
 	b = 1;
 
@@ -17,7 +18,7 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-		printf("%lu", c);
+		printf("%0.Lf", c);
 	if (f == 97)
 	{
 		putchar ('\n');
