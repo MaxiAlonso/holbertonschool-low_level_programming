@@ -9,7 +9,7 @@ int main(void)
 {
 	long double a, b, c;
 	int f;
-	
+
 	a = 0;
 	b = 1;
 
@@ -18,7 +18,7 @@ int main(void)
 		c = a + b;
 		a = b;
 		b = c;
-		printf("%0.Lf", c);
+		printf("%.0Lf", c);
 	if (f == 97)
 	{
 		putchar ('\n');
