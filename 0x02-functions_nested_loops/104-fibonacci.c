@@ -8,18 +8,18 @@
 int main(void)
 {
 	long double a, b, c;
-	int f;
+	unsigned long int f;
 
 	a = 0;
 	b = 1;
 
-	for (f = 0; f < 100; f++)
+	for (f = 0; f < 98; f++)
 	{
 		c = a + b;
 		a = b;
 		b = c;
 		printf("%.0Lf", c);
-	if (f == 99)
+	if (f == 97)
 	{
 		putchar ('\n');
 	}
