@@ -13,13 +13,13 @@ int main(void)
 	a = 0;
 	b = 1;
 
-	for (f = 0; f < 98; f++)
+	for (f = 0; f < 100; f++)
 	{
 		c = a + b;
 		a = b;
 		b = c;
 		printf("%.0Lf", c);
-	if (f == 97)
+	if (f == 99)
 	{
 		putchar ('\n');
 	}
