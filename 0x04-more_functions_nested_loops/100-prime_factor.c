@@ -20,6 +20,6 @@ int main(void)
 			n = (n / p);
 		}
 	}
-	printf("%ld \n", p);
+	printf("%ld\n", p);
 	return (0);
 }
