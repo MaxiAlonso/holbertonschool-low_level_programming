@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts2 - prints every other character of a string.
+ * puts_half - prints half of a string, followed by a new line
  * @str: string
  **/
 
@@ -18,7 +18,6 @@ void puts_half(char *str)
 	{
 		a++;
 	}
-	a = a - 1;
 	c = a;
 	if (c % 2 == 0)
 	{
