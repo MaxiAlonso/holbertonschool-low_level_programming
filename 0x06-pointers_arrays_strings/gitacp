@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "enter file name to add"
+read name
+git add $name
+echo "enter commit"
+read commit
+git commit -m "$commit"
+echo "enter branch"
+read branch
+git push -u origin $branch
