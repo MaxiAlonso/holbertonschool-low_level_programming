@@ -11,7 +11,7 @@ void print_number(int n)
 	int i = 0, t = 0;
 	double p = 1;
 
-	if (n < 0)
+	if (n < 0 &&  n != -2147483648)
 	{
 		_putchar('-');
 		n = n * -1;
