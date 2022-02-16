@@ -14,7 +14,8 @@ char *_strncpy(char *dest, char *src, int n)
 
 	i = 0;
 	a = 0;
-	while(src[i])
+
+	while (src[i])
 	{
 		i++;
 	}
@@ -22,14 +23,14 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		for (a = 0; a < n; a++)
 		{
-			dest[a] = src [a];
+			dest[a] = src[a];
 		}
 	}
 	else
 	{
 		for (a = 0; a < i; a++)
 		{
-			dest[a] = src [a];
+			dest[a] = src[a];
 		}
 		for (a = i; a < n; a++)
 		{
