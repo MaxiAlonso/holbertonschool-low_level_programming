@@ -9,7 +9,7 @@ i * @a: array of integers
 void reverse_array(int *a, int n)
 {
 	int b, c;
-	char temp;
+	int temp;
 
 	b = 0;
 	c = n - 1;
