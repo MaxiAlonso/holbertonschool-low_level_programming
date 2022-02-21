@@ -4,32 +4,25 @@
  *  *_strchr - locates a character in a string.
  * @s: string
  * @c: character
- * Return: character if there is a match or null if it is not.
+ * Return: string if there is a match or null if it is not.
  **/
 
 char *_strchr(char *s, char c)
 {
-	int a, b, d, i;
-	char *temp;
+	int i;
+	char *t;
 
 	i = 0;
-	temp = '\0';
+	t = '\0';
 
 	while (s[i])
 	{
-		i++;
-	}
-	for (a = 0; a < i; a++)
-	{
-		if (s[a] == c)
+		while (s[i] != c)
 		{
-			d = a;
-			for (b = 0; b < i - d; b++, a++)
-			{
-				temp[b] = s[a];
-			}
-			a = i;
+			i++;
 		}
+		t = &s[i];
+		return (t);
 	}
-	return (temp);
+	return (t);
 }
