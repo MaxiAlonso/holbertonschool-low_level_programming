@@ -13,7 +13,6 @@ char *_strchr(char *s, char c)
 	char *t;
 
 	i = 0;
-	t = '\0';
 
 	while (s[i])
 	{
@@ -24,5 +23,5 @@ char *_strchr(char *s, char c)
 		t = &s[i];
 		return (t);
 	}
-	return (t);
+	return ('\0');
 }
