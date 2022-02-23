@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _pow_recursion calculates value of x raised to the power of y
+ * _pow_recursion - calculates value of x raised to the power of y
  * @x: base
  * @y: power
  * Return: value of x raised to the power of y and -1 if y < 0
