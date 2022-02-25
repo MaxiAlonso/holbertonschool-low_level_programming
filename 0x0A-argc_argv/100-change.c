@@ -18,35 +18,30 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	change = atoi(argv[1]);
+	if (change < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
 	if (change / 25)
 	{
-		cents = cents + change / 25;
-		change = change - cents * 25;
-		c = cents;
+		cents = cents + change / 25, change = change - cents * 25, c = cents;
 	}
-	if (change /10)
+	if (change / 10)
 	{
-		cents = cents + change / 10;
-		change = change - (cents - c) * 10;
-		c = cents;
+		cents = cents + change / 10, change = change - (cents - c) * 10, c = cents;
 	}
 	if (change / 5)
 	{
-		cents = cents + change / 5;
-		change = change - (cents - c) * 5;
-		c = cents;
+		cents = cents + change / 5, change = change - (cents - c) * 5, c = cents;
 	}
 	if (change / 2)
 	{
-		cents = cents + change / 2;
-		change = change - (cents - c) * 2;
-		c = cents;
+		cents = cents + change / 2, change = change - (cents - c) * 2, c = cents;
 	}
 	if (change / 1)
 	{
-		cents = cents + change / 1;
-		change = change - (cents - c) * 1;
-		c = cents;
+		cents = cents + change / 1, change = change - (cents - c) * 1, c = cents;
 	}
 	printf("%d\n", cents);
 	return (0);
