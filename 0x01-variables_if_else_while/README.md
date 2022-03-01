@@ -19,7 +19,7 @@ The learning objectives for this project were:
 	• What is the ASCII character set
 	• What are the purpose of the gcc flags -m32 and -m64
 
-###For this project we had to write the following C programs:
+### For this project we had to write the following C programs:
 	• 0-positive_or_negative.c - assign a random number to the variable n each time it is executed. Complete the source code in order to print whether the number stored in the variable n is positive or negative.
 		-	You can find the source code here (https://github.com/holbertonschool/0x01.c/blob/master/0-positive_or_negative_c)
 		-	The variable n will store a different value every time you run this program
