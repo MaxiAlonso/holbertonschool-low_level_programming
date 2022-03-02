@@ -5,12 +5,16 @@
 * char *argstostr - concatenates all the arguments of a program.
 * @ac: arguments counter
 * @av: argument matrix
+* Return: a pointer to a new string, or NULL if it fails.
+* also return NULL  if ac = 0 or av = NULL
 **/
 
 char *argstostr(int ac, char **av)
 {
 	int i, j, count;
 	char *s;
+
+	count = 0;
 
 	if (ac == 0 || av == NULL)
 	{
