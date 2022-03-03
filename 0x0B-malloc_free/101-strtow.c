@@ -15,10 +15,12 @@ char **strtow(char *str)
 	char **s = 0;
 
 	wc = 0, w = 0, i = 0;
-
 	if (str == NULL || *str == '\0')
+	{
 		return (NULL);
+	}
 	while (str[i])
+	{
 		if (str[i] == 32)
 		{
 			i++;
@@ -28,11 +30,9 @@ char **strtow(char *str)
 			start = i, w = 0;
 			while (str[i] != 32)
 			{
-				i++;
-				w++;
+				i++, w++;
 			}
-			w++;
-			wc++;
+			w++, wc++;
 			s = malloc(sizeof(char) * wc);
 			if (s == NULL)
 			{
@@ -45,10 +45,10 @@ char **strtow(char *str)
 			}
 			for (a = start; a < start + w; a++)
 			{
-				b = 0;
-				s[wc][b] = str[a];
-				b++;
+				b = 0, s[wc][b] = str[a], b++;
 			}
 		}
 	return (s);
+	}
+	return (NULL);
 }
