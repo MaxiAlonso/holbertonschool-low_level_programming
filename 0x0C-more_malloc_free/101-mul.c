@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 {
 	int mul;
 
-	if (argc != 3 || atoi(argv[1]) == 0 || atoi(argv[2]) == 0)
+	if (argc != 3)
 	{
 	printf("Error\n");
 	exit(98);
