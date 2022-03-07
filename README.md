@@ -1,4 +1,4 @@
-# holbertonschool low level programming
+# **Holbertonschool low level programming**
 
 This repository contains the following projects: 
 	
