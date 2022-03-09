@@ -25,7 +25,8 @@ int main(int argc, char *argv[])
 	opc = argv[2][0];
 	op = argv[2];
 
-	if (opc != '+' && opc != '-' && opc != '*' && opc != '/' && opc != '%')
+	if ((opc != '+' && opc != '-' && opc != '*'
+	&& opc != '/' && opc != '%' ) || argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
