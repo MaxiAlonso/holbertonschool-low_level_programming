@@ -23,6 +23,8 @@ int (*get_op_func(char *s))(int, int)
 
 	int i;
 
+	i = 0;
+
 	while (ops[i].op[0])
 	{
 		if (ops[i].op[0] == s[0])
