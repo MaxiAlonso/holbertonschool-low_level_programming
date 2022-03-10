@@ -17,12 +17,12 @@ void print_all(const char * const format, ...)
 	i = 0;
 	len = 0;
 
-	while (format[len] && format)
+	while (format && format[len])
 	{
 		len++;
 	}
 	va_start(ap, format);
-	while (format[i] && format)
+	while (format && format[i])
 	{
 		switch (format[i])
 		{
