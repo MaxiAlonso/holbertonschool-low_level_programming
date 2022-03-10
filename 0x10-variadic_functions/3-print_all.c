@@ -22,7 +22,7 @@ void print_all(const char * const format, ...)
 		len++;
 	}
 	va_start(ap, format);
-	while (format[i])
+	while (format[i] && format)
 	{
 		switch (format[i])
 		{
