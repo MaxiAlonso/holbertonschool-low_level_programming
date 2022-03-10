@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 	i = 0;
 	len = 0;
 
-	while (format[len])
+	while (format[len] && format)
 	{
 		len++;
 	}
