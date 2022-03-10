@@ -1,7 +1,7 @@
 global main
 
 section .data
-   msg: db "Hello, World!",0xa
+   msg: db "Hello, World",0xa
    len: equ $-msg
 
 section .text
