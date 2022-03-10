@@ -14,7 +14,6 @@ int sum_them_all(const unsigned int n, ...)
 	va_list ap;
 
 	sum = 0;
-	i = 0;
 
 	if (n != 0)
 	{
