@@ -13,7 +13,7 @@ int detectLoop(const listint_t *head)
 	slow = head;
 	fast = head;
 
-	while (slow != NULL && fast != NULL && fast->next != NULL)
+	while (fast != NULL && fast->next != NULL)
 	{
 		slow = slow->next;
 		fast = fast->next->next;
@@ -45,7 +45,7 @@ size_t print_listint_safe(const listint_t *head)
 	}
 	if (detectLoop(head) == 1)
 	{
-		while (slow != NULL && fast != NULL && fast->next != NULL)
+		while (fast != NULL && fast->next != NULL)
 		{
 			printf("[%p] %d\n", (void *)slow, slow->n);
 			slow = slow->next;
