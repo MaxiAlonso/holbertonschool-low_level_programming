@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-   * detectLoop - detect a loop in a llinked list.
+   * detectLoopf - detect a loop in a llinked list.
    * @head: pointer to the head of the list
    * Return: 1 if ther is a loop 0 otherwise.
    **/
@@ -33,7 +33,7 @@ int detectLoopf(listint_t *head)
 
 size_t free_listint_safe(listint_t **h)
 {
-	const listint_t *slow = *h, *fast = *h;
+	listint_t *slow = *h, *fast = *h;
 	int nodes = 0;
 
 
@@ -43,7 +43,7 @@ size_t free_listint_safe(listint_t **h)
 	}
 	if (detectLoopf(*h) == 1)
 	{
-		while (slow != NULL && fast != NULL && fast->next != NULL)
+		while (fast != NULL && fast->next != NULL)
 		{
 			slow = slow->next;
 			fast = fast->next->next;
@@ -55,7 +55,7 @@ size_t free_listint_safe(listint_t **h)
 				{
 					slow = slow->next, fast = fast->next, nodes++;
 				}
-				printf("-> [%p] %d\n", (void *)slow, slow->n);
+				*h = NULL;
 				return (nodes);
 			}
 		}
@@ -67,6 +67,7 @@ size_t free_listint_safe(listint_t **h)
 		{
 			*h = (*h)->next, nodes++;
 		}
+		*h = NULL;
 		return (nodes);
 	}
 }
