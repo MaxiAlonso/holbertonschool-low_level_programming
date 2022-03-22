@@ -17,11 +17,11 @@ void free_listint2(listint_t **head)
 			next = node->next;
 			free(node);
 			node = next;
+			*head = node;
 		}
 	}
 	else
 	{
 		return;
 	}
-	*head = NULL;
 }
