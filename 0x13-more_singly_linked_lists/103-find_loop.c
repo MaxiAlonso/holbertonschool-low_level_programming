@@ -17,7 +17,7 @@ listint_t *find_listint_loop(listint_t *head)
 	{
 		return (NULL);
 	}
-	while (slow != NULL && fast != NULL && fast->next != NULL)
+	while (fast != NULL && fast->next != NULL)
 	{
 		slow = slow->next;
 		fast = fast->next->next;
@@ -29,7 +29,6 @@ listint_t *find_listint_loop(listint_t *head)
 				slow = slow->next;
 				fast = fast->next;
 			}
-			printf("Loop starts at [%p] %d\n", (void *)slow, slow->n);
 			return (slow);
 		}
 	}
