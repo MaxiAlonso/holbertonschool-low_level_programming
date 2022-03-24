@@ -13,18 +13,19 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	count = 0;
 
-	if (index <= 32)
+	if (n == 0)
 	{
-		while (n != 0)
+		return (0);
+	}
+	while (n != 0)
+	{
+		if (count == index)
 		{
-			if (count == index)
-			{
-				bit = n & 1;
-				return (bit);
-			}
-			count++;
-			n >>= 1;
+			bit = n & 1;
+			return (bit);
 		}
+		count++;
+		n >>= 1;
 	}
 	return (-1);
 }
