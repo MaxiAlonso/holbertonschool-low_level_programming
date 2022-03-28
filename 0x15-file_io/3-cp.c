@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int from = 0, to = 0, r = 1024, w = 0, c = 0;
+	int from = 0, to = 0, r = 0, w = 0, c = 0;
 	char str[1024];
 
 	if (argc != 3)
@@ -27,9 +27,9 @@ int main(int argc, char *argv[])
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
-	while (r == 1024)
+	r = read(from, str, 1024);
+	if (r > 0)
 	{
-		r = read(from, str, 1024);
 		if (r == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
