@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	}
 	from = open(argv[1], O_RDONLY);
 	r = read(from, str, len);
-	if (argv[1] == NULL || from == -1 || r == -1)
+	if (from == -1 || r == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		close(from);
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC,
 			S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 	w = write(to, str, r);
-	if (argv[2] == NULL || to == -1 || w == -1)
+	if (to == -1 || w == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		close(from);
@@ -50,3 +50,13 @@ int main(int argc, char *argv[])
 	}
 	return (0);
 }
+
+/*void exit_error(int error, char* str, int fd)
+{
+		if (error == 98)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+                	close(from);
+                	exit(98);
+		}
+}*/
