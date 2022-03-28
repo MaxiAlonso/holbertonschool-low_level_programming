@@ -40,7 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	sdi = write(STDIN_FILENO, str, letters);
+	sdi = write(STDOUT_FILENO, str, letters);
 	free(str);
 	close(fd);
 
