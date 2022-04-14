@@ -1,4 +1,4 @@
-# **0x13 – More singly linked lists**i
+# **0x13 – More singly linked lists**
 
 The learning objectives for this project were:
 
