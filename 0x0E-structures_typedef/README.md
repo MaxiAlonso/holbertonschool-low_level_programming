@@ -14,7 +14,7 @@ For this project we had to create the following header files and C programs:
 		-	age, type = float
 		-	owner, type = char *
 	• 1-init_dog.c - function that initialize a variable of type struct dog
-		-	 Prototype: void init_dog(struct dog *d, char *name, float age, char *owner);
+		-	Prototype: void init_dog(struct dog *d, char *name, float age, char *owner);
 	• 2-print_dog.c - f unction that prints a struct dog
 		-	Prototype: void print_dog(struct dog *d);
 		-	You are allowed to use the standard library
