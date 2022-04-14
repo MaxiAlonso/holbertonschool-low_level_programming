@@ -4,8 +4,8 @@ The learning objectives for this project were:
 
 ## **General**
 
-• Look for the right source of information without too much help
-• How to manipulate bits and use bitwise operators
+	• Look for the right source of information without too much help
+	• How to manipulate bits and use bitwise operators
 
 For this project we had to create the following C programs:
 	
