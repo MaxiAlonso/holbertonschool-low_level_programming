@@ -9,6 +9,7 @@ The learning objectives for this project were:
 • Where does a function pointer point to in the virtual memory
 
 For this project we had to create the following C programs:
+	
 	• 0-print_name.c - function that prints a name.
 		-	Prototype: void print_name(char *name, void (*f)(char *));
 	• 1-array_iterator.c - function that executes a function given as a parameter on each element of an array.
