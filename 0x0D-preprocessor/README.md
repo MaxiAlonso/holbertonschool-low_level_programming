@@ -4,9 +4,9 @@ The learning objectives for this project were:
 
 ## **General**
 
-• What are macros and how to use them
-• What are the most common predefined macros
-• How to include guard your header files
+	• What are macros and how to use them
+	• What are the most common predefined macros
+	• How to include guard your header files
 
 For this project we had to create the following header files and C programs:
 
