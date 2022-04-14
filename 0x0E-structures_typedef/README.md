@@ -4,8 +4,8 @@ The learning objectives for this project were:
 
 ## **General**
 
-• What are structures, when, why and how to use them
-• How to use typedef
+	• What are structures, when, why and how to use them
+	• How to use typedef
 
 For this project we had to create the following header files and C programs:
 
