@@ -13,7 +13,6 @@ The learning objectives for this project were:
 • What are file permissions, and how to set them when creating a file with the open system call
 • What is a system call
 • What is the difference between a function and a system call
-• For this project we had to create the following C programs:
 
 For this project we had to create the following C programs:
 
