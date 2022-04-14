@@ -4,8 +4,8 @@ The learning objectives for this project were:
 
 ## **General**
 
-• When and why using linked lists vs array
-• How to build and use linked lists 
+	• When and why using linked lists vs array
+	• How to build and use linked lists 
 
 For this project we had to create the following C programs:
 
