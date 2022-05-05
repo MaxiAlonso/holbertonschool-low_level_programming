@@ -1,7 +1,5 @@
 #include "lists.h"
 
-#include "lists.h"
-
 /**
  * dlistint_len - returns the number of elements in a linked dlistint_t list.
  * @h: pointer to the head node of the linked list.
@@ -58,10 +56,10 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		prev_node = current_node->prev;
 		if (index == idx)
 		{
+			new_node->next = current_node;
+			new_node->prev = prev_node;
 			prev_node->next = new_node;
 			current_node->prev = new_node;
-			new_node->next = current_node;
-			new_node->prev = current_node->prev;
 			return (new_node);
 		}
 		index++;
