@@ -52,15 +52,16 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 				*head = next_node;
 				return (1);
 			}
+			if (next_node == NULL)
+			{
+				prev_node->next = NULL;
+				return (1);
+			}
 			if (index == idx)
 			{
-				if (index == len)
-				{
-					prev_node->next = NULL;
-					return (1);
-				}
 				prev_node->next = next_node;
 				next_node->prev = prev_node;
+				return (1);
 			}
 			current_node = current_node->next;
 			idx++;
