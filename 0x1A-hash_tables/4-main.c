@@ -46,5 +46,6 @@ int main(void)
     printf("%s:%s\n", "dram", value);
     value = hash_table_get(ht, "vivency");
     printf("%s:%s\n", "vivency", value);
+
     return (EXIT_SUCCESS);
 }
