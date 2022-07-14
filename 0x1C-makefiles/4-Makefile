@@ -7,7 +7,7 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 
 # all: builds the executable
 all: ${OBJ}
-		${CC} ${SRC} ${CFLAGS} ${NAME}
+		${CC} ${CFLAGS} ${SRC} -o ${NAME}
 
 # deletes all Emacs and Vim temporary files along with the executable
 clean: 
