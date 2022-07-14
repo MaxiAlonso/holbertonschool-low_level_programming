@@ -3,6 +3,7 @@ SRC = main.c school.c
 OBJ = $(SRC:%.c=%.o)
 NAME = school
 
+#all: builds the executable
 all: ${OBJ}
 		${CC} ${OBJ} -o ${NAME}
 		
